@@ -12,32 +12,33 @@ namespace Lekce8Telesa
 
         public string Bokorys()
         {
-            return $"Kruh o průměru {polomer * 2}.";
+            return $"kruh o průměru {polomer * 2}.";
         }
 
         public override void NactiParametry()
         {
-            Console.WriteLine("Zadej poloměr koule.");
+            Console.Write("Zadej poloměr koule: ");
+            polomer = int.Parse(Console.ReadLine());
         }
 
         public string Narys()
         {
-            return $"Kruh o průměru {polomer * 2}.";
+            return $"kruh o průměru {polomer * 2}.";
         }
 
         public override int ObjemTelesa()
         {
-            return (int)(4 * 3.14 * polomer * polomer * polomer);
+            return (int)(4 * Program.pi * polomer * polomer * polomer/3);
                 }
 
         public override int PovrchTelesa()
         {
-            return (int)(4 * 3.14 * 2);       
+            return (int)(4 * Program.pi * 2);       
                 }
 
         public string Pudorys()
         {
-            return $"Kruh o průměru {polomer * 2}.";
+            return $"kruh o průměru {polomer * 2}.";
         }
     }
 }

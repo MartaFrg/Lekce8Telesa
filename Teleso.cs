@@ -13,11 +13,11 @@ namespace Lekce8Telesa
         public abstract int PovrchTelesa();
         public void VypisObjem()
         {
-            Console.WriteLine(ObjemTelesa());
+            Console.WriteLine("Objem: "+ObjemTelesa());
         }
         public void VypisPovrch()
         {
-            Console.WriteLine(PovrchTelesa());
+            Console.WriteLine("Povrch: "+PovrchTelesa());
         }
     }
 }
